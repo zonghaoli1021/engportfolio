@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case study: a 2.5-DOF Cartesian motion platform prototype developed for Boston University ME360 Electromechanical Design."
+    />
+    <title>2.5-DOF Cartesian Motion System | Zonghao (Johnny) Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <script src="script.js?v=7" defer></script>
+  </head>
+  <body class="case-study-page" id="top">
+    <div class="page-grid" aria-hidden="true"></div>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Project navigation">
+        <a class="brand" href="index.html#home" aria-label="Return to portfolio homepage">
+          <span class="brand-mark">ZL</span>
+          <span class="brand-copy">
+            <strong>Zonghao (Johnny) Li</strong>
+            <small>MECHANICAL ENGINEERING</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#prototype">Prototype</a>
+          <a href="#demonstration">Demonstration</a>
+          <a href="index.html#projects" class="button button--small">All Projects</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="case-hero container">
+        <a class="back-link" href="index.html#projects"><span>&lt;-</span> Back to Projects</a>
+        <div class="case-hero-grid">
+          <div class="case-intro reveal">
+            <p class="eyebrow">ME360 // ELECTROMECHANICAL DESIGN // TEAM PROTOTYPE</p>
+            <h1>2.5-DOF Cartesian<br /><span>Motion System</span></h1>
+            <p class="case-lede">
+              A portable automated game-board platform built around aluminum-extrusion guides,
+              belt-driven linear motion, and 3D-printed fixtures for coordinated planar movement.
+            </p>
+            <div class="project-tags">
+              <span>Cartesian Motion</span>
+              <span>Belt Drive</span>
+              <span>3D Printing</span>
+              <span>G-code Control</span>
+            </div>
+          </div>
+          <figure class="case-hero-media reveal">
+            <img
+              src="assets/cartesian/hero-prototype.webp"
+              alt="Completed Cartesian motion system prototype around a black game-board surface"
+            />
+            <figcaption>Completed physical prototype photographed after assembly.</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-facts reveal" aria-label="Project information">
+          <div>
+            <p>PROJECT TYPE</p>
+            <strong>Team prototype</strong>
+          </div>
+          <div>
+            <p>COURSE</p>
+            <strong>ME360 / Spring 2025</strong>
+          </div>
+          <div>
+            <p>MY ROLE</p>
+            <strong>Team lead, per resume</strong>
+          </div>
+          <div>
+            <p>APPLICATION</p>
+            <strong>Automated game board</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-metrics container reveal" aria-label="Documented requirements and implementation">
+        <div>
+          <strong>2.5</strong><span>DOF</span>
+          <p>Motion-system objective</p>
+        </div>
+        <div>
+          <strong>3</strong><span>axes</span>
+          <p>Belt-driven linear stages</p>
+        </div>
+        <div>
+          <strong>&ge;2.5</strong><span>in</span>
+          <p>Required work-area width</p>
+        </div>
+        <div>
+          <strong>1-4</strong><span>members</span>
+          <p>Team-size brief</p>
+        </div>
+        <div>
+          <strong>&le;10</strong><span>min</span>
+          <p>Required one-person assembly time</p>
+        </div>
+        <div class="metric-tradeoff">
+          <strong>Physical</strong><span>build</span>
+          <p>Supplied prototype evidence</p>
+        </div>
+      </section>
+
+      <section class="case-section container" id="overview">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">01 // DESIGN BRIEF</p>
+          <h2>Packaging multi-axis motion into a transportable prototype.</h2>
+        </div>
+        <div class="case-columns">
+          <article class="case-copy-card reveal">
+            <h3>The Assignment</h3>
+            <p>
+              The ME360 brief required a small, lightweight 2.5-DOF system with an end-effector
+              work area of at least 2.5 in by 2.5 in. The platform also had to be suitable for
+              backpack transport and assemble by one person within ten minutes.
+            </p>
+          </article>
+          <article class="case-copy-card reveal">
+            <h3>The Implemented Direction</h3>
+            <p>
+              The photographed prototype uses an aluminum-extrusion structure, visible timing-belt
+              motion transmission, and blue 3D-printed brackets to support an automated board-game
+              application described in my resume.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">02 // DEVELOPMENT PROCESS</p>
+          <h2>From linear stage concept to integrated moving platform.</h2>
+        </div>
+        <div class="mission-flow">
+          <article class="mission-step reveal">
+            <span>01</span>
+            <h3>Define Task</h3>
+            <p>Translate the 2.5-DOF course brief into a compact automated game-board mechanism.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>02</span>
+            <h3>Build Frame</h3>
+            <p>Arrange aluminum extrusion as both structural frame and linear-guide architecture.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>03</span>
+            <h3>Fabricate Fixtures</h3>
+            <p>Use printed brackets and stage supports to locate motion hardware and board elements.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>04</span>
+            <h3>Integrate Motion</h3>
+            <p>Combine belt-driven axes and stepper-driven motion into the physical platform.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>05</span>
+            <h3>Program Moves</h3>
+            <p>Use G-code motion sequences, documented in my resume, for automated positioning.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section container" id="prototype">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">03 // PHYSICAL PROTOTYPE</p>
+          <h2>Authentic build photographs show the system architecture.</h2>
+        </div>
+        <div class="cad-gallery prototype-gallery">
+          <figure class="gallery-wide reveal">
+            <img
+              src="assets/cartesian/assembled-prototype.webp"
+              alt="Assembled game-board Cartesian motion prototype with aluminum rails and blue printed brackets"
+              loading="lazy"
+            />
+            <figcaption>
+              Completed prototype view showing the board surface, surrounding rails, belt paths, and printed corner fixtures.
+            </figcaption>
+          </figure>
+          <figure class="gallery-wide reveal">
+            <img
+              src="assets/cartesian/frame-development.webp"
+              alt="Close view of the Cartesian platform aluminum extrusion and 3D-printed linear-stage fixtures during assembly"
+              loading="lazy"
+            />
+            <figcaption>
+              Assembly-stage photograph highlighting aluminum extrusion, timing belts, and 3D-printed mounting components.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section container" id="demonstration">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">04 // DEMONSTRATION MEDIA</p>
+          <h2>Prototype motion captured in the supplied project video.</h2>
+        </div>
+        <figure class="case-video reveal">
+          <video controls preload="metadata" poster="assets/cartesian/hero-prototype.webp">
+            <source src="assets/cartesian/prototype-demonstration.mp4" type="video/mp4" />
+            Your browser does not support embedded MP4 video.
+          </video>
+          <figcaption>Supplied demonstration footage of the completed 2.5-DOF Cartesian platform.</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">05 // EVIDENCE &amp; SCOPE</p>
+          <h2>A fabricated classroom prototype with bounded claims.</h2>
+        </div>
+        <div class="validation-grid">
+          <article class="validation-card reveal">
+            <p class="validation-status success">VISIBLE BUILD EVIDENCE</p>
+            <h3>Integrated mechanical assembly</h3>
+            <p>
+              Supplied photographs document a built platform using extrusion rails, belts, pulleys,
+              a board surface, and printed fixtures rather than a conceptual-only design.
+            </p>
+          </article>
+          <article class="validation-card reveal">
+            <p class="validation-status warning">REQUIREMENTS BASIS</p>
+            <h3>Targets from course brief</h3>
+            <p>
+              The work-area and assembly-time numbers shown above are requirements in the ME360
+              assignment sheet; the provided files do not quantify measured compliance.
+            </p>
+          </article>
+          <article class="validation-card reveal">
+            <p class="validation-status pending">DOCUMENTATION LIMIT</p>
+            <h3>No formal performance report supplied</h3>
+            <p>
+              The submitted evidence demonstrates construction and includes a motion video, but
+              it does not provide accuracy, repeatability, payload, or endurance test data.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-source container reveal">
+        <p class="eyebrow">SOURCE MATERIAL</p>
+        <h2>Project documentation</h2>
+        <p>
+          Project context and requirements are taken from the supplied
+          <strong>Assignment 3 - Cartesian motion system</strong> brief for ME360. Physical
+          prototype visuals and demonstration footage are user-supplied media. The team-lead,
+          three belt-drive stage, 3D-printing, and G-code descriptions are drawn from my resume.
+        </p>
+        <div class="case-source-actions">
+          <a class="button case-link" href="assets/cartesian/ME360-Cartesian-Motion-System-Assignment.pdf" target="_blank" rel="noreferrer">View Assignment Brief</a>
+          <a class="text-link" href="index.html#projects">Return to portfolio <span>-></span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>&copy; <span id="year"></span> Zonghao (Johnny) Li. Mechanical Engineering Portfolio.</p>
+      <a href="#top">Back to top <span>^</span></a>
+    </footer>
+  </body>
+</html>

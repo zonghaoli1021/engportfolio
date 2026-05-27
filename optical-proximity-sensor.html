@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case study: optical proximity sensor transduction and calibration project for a mechanical oscillator in ME310."
+    />
+    <title>Optical Proximity Sensor System | Zonghao (Johnny) Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <script src="script.js?v=7" defer></script>
+  </head>
+  <body class="case-study-page" id="top">
+    <div class="page-grid" aria-hidden="true"></div>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Project navigation">
+        <a class="brand" href="index.html#home" aria-label="Return to portfolio homepage">
+          <span class="brand-mark">ZL</span>
+          <span class="brand-copy">
+            <strong>Zonghao (Johnny) Li</strong>
+            <small>MECHANICAL ENGINEERING</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#method">Method</a>
+          <a href="#results">Results</a>
+          <a href="index.html#projects" class="button button--small">All Projects</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="case-hero container">
+        <a class="back-link" href="index.html#projects"><span>&lt;-</span> Back to Projects</a>
+        <div class="case-hero-grid">
+          <div class="case-intro reveal">
+            <p class="eyebrow">ME310 // INSTRUMENTATION &amp; DYNAMICS // TEAM PROJECT</p>
+            <h1>Optical Proximity<br /><span>Sensor System</span></h1>
+            <p class="case-lede">
+              A transduction system for measuring the displacement response of a weakly nonlinear
+              mechanical oscillator using a non-contact optical sensor, signal conditioning, and DAQ analysis.
+            </p>
+            <div class="project-tags">
+              <span>Optical Sensing</span>
+              <span>Calibration</span>
+              <span>MATLAB / DAQ</span>
+              <span>System Dynamics</span>
+            </div>
+          </div>
+          <figure class="case-hero-media reveal">
+            <img
+              src="assets/me310/calibration-curve.webp"
+              alt="Optical proximity sensor output voltage plotted against target height with a best-fit line"
+            />
+            <figcaption>Measured voltage-to-distance calibration relationship from the team presentation.</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-facts reveal" aria-label="Project information">
+          <div>
+            <p>PROJECT TYPE</p>
+            <strong>Team laboratory project</strong>
+          </div>
+          <div>
+            <p>COURSE</p>
+            <strong>ME310</strong>
+          </div>
+          <div>
+            <p>SYSTEM</p>
+            <strong>Spring-mass oscillator</strong>
+          </div>
+          <div>
+            <p>MEASUREMENT</p>
+            <strong>Non-contact displacement</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-metrics container reveal" aria-label="Reported measurement results">
+        <div>
+          <strong>0.1180</strong><span>V/cm</span>
+          <p>Sensor sensitivity</p>
+        </div>
+        <div>
+          <strong>1.735</strong><span>V</span>
+          <p>Sensor offset</p>
+        </div>
+        <div>
+          <strong>95.238</strong><span>N/m</span>
+          <p>Spring constant</p>
+        </div>
+        <div>
+          <strong>16.67</strong><span>rad/s</span>
+          <p>Natural frequency</p>
+        </div>
+        <div>
+          <strong>0.2468</strong><span>-</span>
+          <p>Damping ratio</p>
+        </div>
+        <div class="metric-tradeoff">
+          <strong>&plusmn;0.2731</strong><span>rad/s</span>
+          <p>Natural frequency uncertainty</p>
+        </div>
+      </section>
+
+      <section class="case-section container" id="overview">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">01 // MEASUREMENT OBJECTIVE</p>
+          <h2>Turning reflected light into oscillator displacement.</h2>
+        </div>
+        <div class="case-columns">
+          <article class="case-copy-card reveal">
+            <h3>The Challenge</h3>
+            <p>
+              A driven spring-mass system requires displacement measurements across low-frequency,
+              resonant, and high-frequency response regimes without mechanically loading the moving plate.
+            </p>
+          </article>
+          <article class="case-copy-card reveal">
+            <h3>The System</h3>
+            <p>
+              The test chain paired an optical proximity sensor with a voltage-divider signal-conditioning
+              circuit and DAQ input so reflected-light voltage could be calibrated into displacement data.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section container" id="method">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">02 // TEST PROCESS</p>
+          <h2>Calibrate first, then identify dynamic behavior.</h2>
+        </div>
+        <div class="mission-flow">
+          <article class="mission-step reveal">
+            <span>01</span>
+            <h3>Characterize Spring</h3>
+            <p>Applied incremental masses and measured plate displacement to determine spring constant.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>02</span>
+            <h3>Configure Sensor</h3>
+            <p>Connected the optical sensor through a 10 V, 250 ohm conditioning circuit into DAQ acquisition.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>03</span>
+            <h3>Calibrate Signal</h3>
+            <p>Recorded step-response voltages at known displacement amplitudes to determine offset and sensitivity.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>04</span>
+            <h3>Acquire Motion</h3>
+            <p>Ran sinusoidal trials across driving frequencies and captured voltage-derived motion response.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>05</span>
+            <h3>Compare Model</h3>
+            <p>Used MATLAB analysis to evaluate natural frequency, damping, phase, and uncertainty.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">03 // SYSTEM ARCHITECTURE</p>
+          <h2>A traceable measurement chain from motion to voltage.</h2>
+        </div>
+        <div class="cad-gallery">
+          <figure class="gallery-wide reveal">
+            <img
+              src="assets/me310/system-flow.webp"
+              alt="Block diagram showing driving motor, oscillator, optical sensor, voltage output, and DAQ"
+              loading="lazy"
+            />
+            <figcaption>Measurement chain: motor input, oscillator displacement, optical sensing, and DAQ voltage acquisition.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img
+              src="assets/me310/oscillator-diagram.webp"
+              alt="Diagram of the spring-mass oscillator driven by a motor and Scotch yoke"
+              loading="lazy"
+            />
+            <figcaption>Mechanical oscillator configuration used to explain the test model.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img
+              src="assets/me310/dynamic-response.webp"
+              alt="Measured displacement data compared with an equation-based sinusoidal response"
+              loading="lazy"
+            />
+            <figcaption>Representative trial comparing measured displacement with the modeled response.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section container" id="results">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">04 // RESULTS &amp; ANALYSIS</p>
+          <h2>Dynamic measurements captured resonance and phase behavior.</h2>
+        </div>
+        <div class="analysis-gallery">
+          <figure class="analysis-figure reveal">
+            <img
+              src="assets/me310/phase-shift.webp"
+              alt="Experimental and theoretical phase shift plotted against angular frequency"
+              loading="lazy"
+            />
+            <figcaption>
+              Reported experimental and theoretical phase-shift behavior, including the rapid transition near resonance.
+            </figcaption>
+          </figure>
+          <figure class="analysis-figure reveal">
+            <img
+              src="assets/me310/final-results.webp"
+              alt="Table of final measured mechanical system parameters and uncertainties"
+              loading="lazy"
+            />
+            <figcaption>
+              Final reported parameter table: spring constant, natural frequency, damping ratio, damping coefficient, and mass.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">05 // INTERPRETATION &amp; LIMITATIONS</p>
+          <h2>Useful agreement, with sources of experimental error identified.</h2>
+        </div>
+        <div class="validation-grid">
+          <article class="validation-card reveal">
+            <p class="validation-status success">REPORTED OUTCOME</p>
+            <h3>Predictable sensor response</h3>
+            <p>
+              The presentation concludes that the optical sensor was consistent with distance
+              measurement over the tested range and supported second-order response modeling.
+            </p>
+          </article>
+          <article class="validation-card reveal">
+            <p class="validation-status warning">METHOD VARIATION</p>
+            <h3>Damping estimates differed</h3>
+            <p>
+              The team reported damping ratios of 0.0957 from log decrement and 0.2468 from
+              quality-factor analysis, making method selection an important interpretation point.
+            </p>
+          </article>
+          <article class="validation-card reveal">
+            <p class="validation-status pending">ERROR SOURCES</p>
+            <h3>Model and calibration limits</h3>
+            <p>
+              Documented limitations include neglected spring mass, mass-location effects,
+              potential spring buckling, and possible calibration error.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-source container reveal">
+        <p class="eyebrow">SOURCE MATERIAL</p>
+        <h2>Project documentation</h2>
+        <p>
+          Case-study text and figures were prepared from the submitted
+          <strong>ME310 Final Presentation - Optical Proximity Sensor</strong>. Results shown
+          here are reported team measurements and analyses from that presentation.
+        </p>
+        <div class="case-source-actions">
+          <a class="button case-link" href="assets/me310/ME310-Optical-Proximity-Sensor-Presentation.pdf" target="_blank" rel="noreferrer">View Source Presentation</a>
+          <a class="text-link" href="index.html#projects">Return to portfolio <span>-></span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>&copy; <span id="year"></span> Zonghao (Johnny) Li. Mechanical Engineering Portfolio.</p>
+      <a href="#top">Back to top <span>^</span></a>
+    </footer>
+  </body>
+</html>

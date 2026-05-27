@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case study: a motor speed control and unstable-load transport prototype developed for Boston University ME360."
+    />
+    <title>Unstable-Load Transport Platform | Zonghao (Johnny) Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <script src="script.js?v=7" defer></script>
+  </head>
+  <body class="case-study-page" id="top">
+    <div class="page-grid" aria-hidden="true"></div>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Project navigation">
+        <a class="brand" href="index.html#home" aria-label="Return to portfolio homepage">
+          <span class="brand-mark">ZL</span>
+          <span class="brand-copy">
+            <strong>Zonghao (Johnny) Li</strong>
+            <small>MECHANICAL ENGINEERING</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#process">Process</a>
+          <a href="#demonstration">Demonstration</a>
+          <a href="index.html#projects" class="button button--small">All Projects</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="case-hero container">
+        <a class="back-link" href="index.html#projects"><span>&lt;-</span> Back to Projects</a>
+        <div class="case-hero-grid">
+          <div class="case-intro reveal">
+            <p class="eyebrow">ME360 // MOTOR SPEED CONTROL // SPRING 2025</p>
+            <h1>Unstable-Load<br /><span>Transport Platform</span></h1>
+            <p class="case-lede">
+              A motor-driven prototype challenge focused on transporting a tall, free-standing
+              aluminum bar across a variable distance without toppling it during acceleration,
+              travel, deceleration, or final settling.
+            </p>
+            <div class="project-tags">
+              <span>Motor Speed Control</span>
+              <span>Dynamic Stability</span>
+              <span>Arduino UNO</span>
+              <span>Rapid Prototyping</span>
+            </div>
+          </div>
+          <figure class="case-hero-media reveal">
+            <img
+              src="assets/motor-speed/prototype-demonstration-frame.webp"
+              alt="Wheeled platform carrying a vertical aluminum bar during a classroom motion demonstration"
+            />
+            <figcaption>Authentic frame extracted from the supplied prototype demonstration video.</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-facts reveal" aria-label="Project information">
+          <div>
+            <p>PROJECT TYPE</p>
+            <strong>Simulation + team prototype</strong>
+          </div>
+          <div>
+            <p>COURSE</p>
+            <strong>ME360</strong>
+          </div>
+          <div>
+            <p>PLANT</p>
+            <strong>Motor-driven platform</strong>
+          </div>
+          <div>
+            <p>LOAD CONDITION</p>
+            <strong>Unsupported vertical bar</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-metrics container reveal" aria-label="Assignment requirements">
+        <div>
+          <strong>1</strong><span>ft</span>
+          <p>Vertical bar height</p>
+        </div>
+        <div>
+          <strong>5-10</strong><span>ft</span>
+          <p>Variable transport distance</p>
+        </div>
+        <div>
+          <strong>12</strong><span>V</span>
+          <p>Specified geared motor</p>
+        </div>
+        <div>
+          <strong>UNO</strong><span>Arduino</span>
+          <p>Specified control hardware</p>
+        </div>
+        <div>
+          <strong>0</strong><span>supports</span>
+          <p>Side supports permitted</p>
+        </div>
+        <div class="metric-tradeoff">
+          <strong>Shortest</strong><span>time</span>
+          <p>Competition objective</p>
+        </div>
+      </section>
+
+      <section class="case-section container" id="overview">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">01 // DESIGN CHALLENGE</p>
+          <h2>Move quickly while protecting a dynamically unstable payload.</h2>
+        </div>
+        <div class="case-columns">
+          <article class="case-copy-card reveal">
+            <h3>The Constraint</h3>
+            <p>
+              The course brief required a one-foot 8020 aluminum bar to stand only on its lower
+              face, with no glue, fasteners, or side supports. Abrupt acceleration or braking could
+              therefore cause the load to tip during transport.
+            </p>
+          </article>
+          <article class="case-copy-card reveal">
+            <h3>The Objective</h3>
+            <p>
+              The project combined simulation and a physical prototype challenge: transport the
+              bar across an assigned distance and back, then bring it to rest without toppling,
+              while pursuing the shortest possible completion time.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section container" id="process">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">02 // REQUIRED ENGINEERING WORKFLOW</p>
+          <h2>Model the motion, implement control, then test the hardware.</h2>
+        </div>
+        <div class="mission-flow">
+          <article class="mission-step reveal">
+            <span>01</span>
+            <h3>Concept Design</h3>
+            <p>Develop a transport mechanism capable of carrying the unsupported vertical load.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>02</span>
+            <h3>Motion Simulation</h3>
+            <p>Use a SolidWorks multibody model to examine motion conditions and transport time.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>03</span>
+            <h3>Motor Control</h3>
+            <p>Implement the control strategy around the supplied geared motor and Arduino hardware.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>04</span>
+            <h3>Prototype Build</h3>
+            <p>Construct a mobile platform using foam board, printed components, wheels, and electronics.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>05</span>
+            <h3>Competition Trial</h3>
+            <p>Demonstrate transport at a randomly assigned distance with the bar upright at rest.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section container" id="demonstration">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">03 // PHYSICAL DEMONSTRATION</p>
+          <h2>The supplied video documents a built transporter and vertical load.</h2>
+        </div>
+        <figure class="case-video reveal">
+          <video controls preload="metadata" poster="assets/motor-speed/prototype-demonstration-frame.webp">
+            <source src="assets/motor-speed/prototype-demonstration.mp4" type="video/mp4" />
+            Your browser does not support embedded MP4 video.
+          </video>
+          <figcaption>
+            Supplied classroom demonstration footage showing the motor-driven wheeled platform with the unsupported vertical bar.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">04 // EVIDENCE &amp; LIMITATIONS</p>
+          <h2>Prototype evidence is clear; measured results remain undocumented.</h2>
+        </div>
+        <div class="validation-grid">
+          <article class="validation-card reveal">
+            <p class="validation-status success">VISIBLE PROTOTYPE</p>
+            <h3>Hardware demonstration supplied</h3>
+            <p>
+              The video visibly documents a wheeled platform carrying a tall vertical bar in a classroom
+              trial, supporting the presentation of this project as a fabricated physical prototype.
+            </p>
+          </article>
+          <article class="validation-card reveal">
+            <p class="validation-status warning">COURSE REQUIREMENTS</p>
+            <h3>Values shown are specifications</h3>
+            <p>
+              Bar height, travel range, motor voltage, Arduino hardware, and shortest-time objective
+              are taken from the supplied assignment brief rather than a final performance report.
+            </p>
+          </article>
+          <article class="validation-card reveal">
+            <p class="validation-status pending">NOT PROVIDED</p>
+            <h3>No measured trial time</h3>
+            <p>
+              The supplied materials do not state competition time, simulated minimum time, control
+              parameters, or quantified stability margin, so those results are intentionally not claimed.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-source container reveal">
+        <p class="eyebrow">SOURCE MATERIAL</p>
+        <h2>Project documentation</h2>
+        <p>
+          Project brief, constraints, supplied hardware, and deliverable expectations were taken from
+          <strong>Assignment 2 - Motor speed control</strong> for ME360. The hero still is extracted
+          from the submitted <strong>prototype demonstration video</strong>; no generated project image was required.
+        </p>
+        <div class="case-source-actions">
+          <a class="button case-link" href="assets/motor-speed/ME360-Motor-Speed-Control-Assignment.pdf" target="_blank" rel="noreferrer">View Assignment Brief</a>
+          <a class="text-link" href="index.html#projects">Return to portfolio <span>-></span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>&copy; <span id="year"></span> Zonghao (Johnny) Li. Mechanical Engineering Portfolio.</p>
+      <a href="#top">Back to top <span>^</span></a>
+    </footer>
+  </body>
+</html>

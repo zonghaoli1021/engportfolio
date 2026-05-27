@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mechanical engineering graduate portfolio featuring academic design, analysis, and prototyping projects."
+    />
+    <title>Zonghao (Johnny) Li | Mechanical Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <script src="script.js?v=7" defer></script>
+  </head>
+  <body>
+    <div class="page-grid" aria-hidden="true"></div>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Return to homepage">
+          <span class="brand-mark">ZL</span>
+          <span class="brand-copy">
+            <strong>Zonghao (Johnny) Li</strong>
+            <small>MECHANICAL ENGINEERING</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">Profile</a>
+          <a href="#skills">Toolset</a>
+          <a href="#contact" class="button button--small">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="signal"></span> ENTRY-LEVEL MECHANICAL ENGINEER / RECENT GRADUATE</p>
+          <h1>
+            Engineering ideas into
+            <span>testable systems.</span>
+          </h1>
+          <p class="hero-description">
+            I am <strong>Zonghao (Johnny) Li</strong>, a Boston University mechanical engineering graduate showcasing
+            academic projects in design, analysis, prototyping, and system performance.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#projects">Explore Projects</a>
+            <a class="text-link" href="mailto:johnny02@bu.edu">johnny02@bu.edu <span>-></span></a>
+          </div>
+          <div class="hero-features" aria-label="Engineering capabilities evidenced by projects">
+            <article>
+              <p>01 // PROTOTYPE BUILD</p>
+              <h2>Electromechanical Systems</h2>
+              <span>2.5-DOF motion platform / fabricated hardware</span>
+            </article>
+            <article>
+              <p>02 // MOTION &amp; CONTROL</p>
+              <h2>Motor-Driven Testing</h2>
+              <span>Arduino-based unstable-load transporter</span>
+            </article>
+            <article>
+              <p>03 // CAD &amp; DESIGN</p>
+              <h2>Aircraft Concepts</h2>
+              <span>VTOL packaging / fighter configuration</span>
+            </article>
+            <article>
+              <p>04 // EXPERIMENTATION</p>
+              <h2>Sensor Calibration</h2>
+              <span>DAQ measurement / dynamic response analysis</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="selected-work section container" id="projects">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">ACADEMIC WORK // SELECTED</p>
+            <h2>Engineering Projects</h2>
+          </div>
+          <p class="section-note">
+            Documented design and laboratory projects from my mechanical engineering coursework.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card--large reveal">
+            <figure class="project-preview-media">
+              <img
+                src="assets/vtol/hero-render.webp"
+                alt="CAD rendering of the two-passenger personal VTOL commuter aircraft concept"
+              />
+              <figcaption>CAD concept render / Team 129 final presentation</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-type">BOSTON UNIVERSITY / ME 460/461 / TEAM DESIGN PROJECT</p>
+              <h3>Personal VTOL Commuter Aircraft</h3>
+              <p>
+                Designed a two-passenger VTOL concept for commuting to a rooftop parking garage,
+                then driving through the structure using a stowed main rotor and swiveling tail rotor.
+              </p>
+              <div class="project-tags">
+                <span>CAD Packaging</span>
+                <span>Powertrain Layout</span>
+                <span>Safety Analysis</span>
+                <span>Competitive Study</span>
+              </div>
+              <dl class="project-metrics">
+                <div>
+                  <dt>100 nm</dt>
+                  <dd>design air range</dd>
+                </div>
+                <div>
+                  <dt>105 ktas</dt>
+                  <dd>design cruise speed</dd>
+                </div>
+                <div>
+                  <dt>12 mph</dt>
+                  <dd>ground operation</dd>
+                </div>
+              </dl>
+              <a class="button case-link" href="vtol-commuter-aircraft.html">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--large reveal">
+            <figure class="project-preview-media">
+              <img
+                src="assets/f67/hero-presentation-v2.webp"
+                alt="Presentation visualization inspired by the F-67 multirole fighter design configuration"
+              />
+              <figcaption>Enhanced presentation visualization / based on project configuration</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-type">ME408 / TEAM AIRCRAFT PERFORMANCE &amp; DESIGN PROJECT</p>
+              <h3>F-67 Multirole Fighter Concept</h3>
+              <p>
+                Developed a conceptual high-speed fighter configuration for air-to-air and intercept
+                missions through successive design reviews covering aerodynamics, propulsion, structures,
+                stability, and cost.
+              </p>
+              <div class="project-tags">
+                <span>Aircraft Design</span>
+                <span>SolidWorks CAD</span>
+                <span>Stability &amp; Control</span>
+                <span>Design Workbook</span>
+              </div>
+              <dl class="project-metrics">
+                <div>
+                  <dt>Mach 3.0</dt>
+                  <dd>reported design value</dd>
+                </div>
+                <div>
+                  <dt>800 nm</dt>
+                  <dd>mission range</dd>
+                </div>
+                <div>
+                  <dt>20 deg/s</dt>
+                  <dd>sustained turn rate</dd>
+                </div>
+              </dl>
+              <a class="button case-link" href="f67-multirole-fighter.html">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--large reveal">
+            <figure class="project-preview-media">
+              <img
+                src="assets/me310/calibration-curve.webp"
+                alt="Optical proximity sensor voltage calibration curve plotted against target distance"
+              />
+              <figcaption>Sensor calibration result / extracted from ME310 final presentation</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-type">ME310 / TEAM INSTRUMENTATION &amp; DYNAMICS PROJECT</p>
+              <h3>Optical Proximity Sensor Transduction System</h3>
+              <p>
+                Designed and calibrated a non-contact measurement chain for a weakly nonlinear
+                spring-mass oscillator, then compared measured dynamic response with a second-order model.
+              </p>
+              <div class="project-tags">
+                <span>Sensor Calibration</span>
+                <span>MATLAB / DAQ</span>
+                <span>Dynamic Response</span>
+                <span>Uncertainty Analysis</span>
+              </div>
+              <dl class="project-metrics">
+                <div>
+                  <dt>0.1180 V/cm</dt>
+                  <dd>sensor sensitivity</dd>
+                </div>
+                <div>
+                  <dt>16.67 rad/s</dt>
+                  <dd>natural frequency</dd>
+                </div>
+                <div>
+                  <dt>0.2468</dt>
+                  <dd>damping ratio</dd>
+                </div>
+              </dl>
+              <a class="button case-link" href="optical-proximity-sensor.html">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--large reveal">
+            <figure class="project-preview-media">
+              <img
+                src="assets/cartesian/hero-prototype.webp"
+                alt="Built Cartesian motion platform with aluminum-extrusion frame, belt drives, blue printed fixtures, and game-board surface"
+              />
+              <figcaption>Completed physical prototype / supplied project photograph</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-type">ME360 / ELECTROMECHANICAL DESIGN / TEAM PROTOTYPE</p>
+              <h3>2.5-DOF Cartesian Motion System</h3>
+              <p>
+                Built a portable game-board motion platform using three belt-driven linear stages,
+                aluminum extrusion, and 3D-printed assembly fixtures to automate planar moves.
+              </p>
+              <div class="project-tags">
+                <span>Electromechanical Design</span>
+                <span>Belt Drive</span>
+                <span>3D Printing</span>
+                <span>G-code Motion</span>
+              </div>
+              <dl class="project-metrics">
+                <div>
+                  <dt>2.5 DOF</dt>
+                  <dd>motion-system brief</dd>
+                </div>
+                <div>
+                  <dt>3 axes</dt>
+                  <dd>belt-driven stages</dd>
+                </div>
+                <div>
+                  <dt>&ge;2.5 in</dt>
+                  <dd>required work-area width</dd>
+                </div>
+              </dl>
+              <a class="button case-link" href="cartesian-motion-system.html">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--large reveal">
+            <figure class="project-preview-media">
+              <img
+                src="assets/motor-speed/prototype-demonstration-frame.webp"
+                alt="Physical wheeled transporter prototype carrying a vertical aluminum bar during classroom testing"
+              />
+              <figcaption>Prototype demonstration frame / extracted from supplied video</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-type">ME360 / MOTOR SPEED CONTROL / PROTOTYPE CHALLENGE</p>
+              <h3>Unstable-Load Transport Platform</h3>
+              <p>
+                Developed a motor-driven mobile platform project around transporting a free-standing
+                vertical bar without toppling, combining control strategy, prototyping, and testing.
+              </p>
+              <div class="project-tags">
+                <span>Motor Control</span>
+                <span>Arduino UNO</span>
+                <span>Physical Prototype</span>
+                <span>Dynamic Stability</span>
+              </div>
+              <dl class="project-metrics">
+                <div>
+                  <dt>1 ft</dt>
+                  <dd>unstable-load height</dd>
+                </div>
+                <div>
+                  <dt>5-10 ft</dt>
+                  <dd>specified travel range</dd>
+                </div>
+                <div>
+                  <dt>12 V</dt>
+                  <dd>specified geared motor</dd>
+                </div>
+              </dl>
+              <a class="button case-link" href="motor-speed-control.html">View Case Study</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section container" id="about">
+        <div class="about-card reveal">
+          <p class="eyebrow">PROFILE // ABOUT</p>
+          <h2>From first principles to working prototypes.</h2>
+          <p>
+            I am a Boston University mechanical engineering graduate interested in turning analysis into practical design decisions.
+            My documented work includes conceptual aircraft design, CAD packaging, requirements tradeoffs,
+            sensor calibration, electromechanical prototyping, motor-control challenges, dynamic-response measurement, and technical communication.
+          </p>
+          <a class="text-link" href="#contact">Connect with me <span>-></span></a>
+        </div>
+
+        <div class="skills reveal" id="skills">
+          <p class="eyebrow">TECHNICAL TOOLSET</p>
+          <div class="chip-list" aria-label="Engineering skills">
+            <span>CAD Modeling</span>
+            <span>System Packaging</span>
+            <span>Design Requirements</span>
+            <span>Concept Selection</span>
+            <span>Competitive Benchmarking</span>
+            <span>Safety Analysis</span>
+            <span>Sensor Calibration</span>
+            <span>MATLAB / DAQ</span>
+            <span>Belt-Driven Motion</span>
+            <span>3D Printing</span>
+            <span>Motor Control</span>
+            <span>Arduino UNO</span>
+            <span>Engineering Reports</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section container reveal" id="contact">
+        <p class="eyebrow">CONTACT // NEXT STEP</p>
+        <h2>Looking for a mechanical engineer ready to learn and build?</h2>
+        <p>Based in Boston, MA. Available to discuss entry-level mechanical engineering opportunities.</p>
+        <div class="contact-actions">
+          <a class="button" href="mailto:johnny02@bu.edu">johnny02@bu.edu</a>
+          <a class="social-link" href="tel:+19096629188">909-662-9188</a>
+          <a class="social-link" href="https://www.linkedin.com/in/zonghao-li-145a43329/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="social-link" href="assets/resume/Zonghao-Li-Resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>&copy; <span id="year"></span> Zonghao (Johnny) Li. Mechanical Engineering Portfolio.</p>
+      <a href="#home">Back to top <span>^</span></a>
+    </footer>
+  </body>
+</html>

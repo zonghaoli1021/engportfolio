@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case study: Personal VTOL Commuter Aircraft conceptual design project for Boston University ME 460/461."
+    />
+    <title>Personal VTOL Commuter Aircraft | Zonghao (Johnny) Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <script src="script.js?v=7" defer></script>
+  </head>
+  <body class="case-study-page" id="top">
+    <div class="page-grid" aria-hidden="true"></div>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Project navigation">
+        <a class="brand" href="index.html#home" aria-label="Return to portfolio homepage">
+          <span class="brand-mark">ZL</span>
+          <span class="brand-copy">
+            <strong>Zonghao (Johnny) Li</strong>
+            <small>MECHANICAL ENGINEERING</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#design">Design</a>
+          <a href="#validation">Validation</a>
+          <a href="index.html#projects" class="button button--small">All Projects</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="case-hero container">
+        <a class="back-link" href="index.html#projects"><span>&lt;-</span> Back to Projects</a>
+        <div class="case-hero-grid">
+          <div class="case-intro reveal">
+            <p class="eyebrow">BOSTON UNIVERSITY // ME 460/461 // TEAM 129</p>
+            <h1>Personal VTOL<br /><span>Commuter Aircraft</span></h1>
+            <p class="case-lede">
+              A conceptual two-passenger vertical takeoff and landing aircraft designed to travel
+              from a commuter's home to a city parking-garage rooftop, then move at low speed inside
+              the garage for parking.
+            </p>
+            <div class="project-tags">
+              <span>Conceptual Design</span>
+              <span>CAD Packaging</span>
+              <span>Rotorcraft</span>
+              <span>Safety Review</span>
+            </div>
+          </div>
+          <figure class="case-hero-media reveal">
+            <img
+              src="assets/vtol/hero-render.webp"
+              alt="Rendered CAD model of a compact blue two-seat personal VTOL aircraft"
+            />
+            <figcaption>Concept render extracted from the team final presentation.</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-facts reveal" aria-label="Project information">
+          <div>
+            <p>PROJECT TYPE</p>
+            <strong>Team design project</strong>
+          </div>
+          <div>
+            <p>COURSE</p>
+            <strong>ME 460/461</strong>
+          </div>
+          <div>
+            <p>DESIGN STAGE</p>
+            <strong>Concept / final review</strong>
+          </div>
+          <div>
+            <p>FOCUS</p>
+            <strong>Urban commuter VTOL</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-metrics container reveal" aria-label="Reported design values">
+        <div>
+          <strong>100</strong><span>nm</span>
+          <p>Air range</p>
+        </div>
+        <div>
+          <strong>105</strong><span>ktas</span>
+          <p>Cruise speed</p>
+        </div>
+        <div>
+          <strong>2</strong><span>passengers</span>
+          <p>Capacity</p>
+        </div>
+        <div>
+          <strong>13.21</strong><span>ft</span>
+          <p>Rotor diameter</p>
+        </div>
+        <div>
+          <strong>12</strong><span>mph</span>
+          <p>Ground speed</p>
+        </div>
+        <div class="metric-tradeoff">
+          <strong>1,096</strong><span>lb</span>
+          <p>Reported weight vs. &lt;1000 lb objective</p>
+        </div>
+      </section>
+
+      <section class="case-section container" id="overview">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">01 // DESIGN BRIEF</p>
+          <h2>Connecting vertical flight with practical urban parking.</h2>
+        </div>
+        <div class="case-columns">
+          <article class="case-copy-card reveal">
+            <h3>The Challenge</h3>
+            <p>
+              Conventional rotorcraft do not fit comfortably within typical parking-garage
+              clearances. The team investigated a compact vehicle that could land vertically on a
+              rooftop, reduce its active rotor envelope, and enter the garage without relying on a runway.
+            </p>
+          </article>
+          <article class="case-copy-card reveal">
+            <h3>The Concept</h3>
+            <p>
+              The proposed design uses a two-blade single main rotor, a Lycoming O-360 engine,
+              wheeled skids, a stowable main rotor, and a tail rotor that swivels to provide thrust
+              during low-speed ground travel.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">02 // CONCEPT OF OPERATIONS</p>
+          <h2>One vehicle, two operating environments.</h2>
+        </div>
+        <div class="mission-flow">
+          <article class="mission-step reveal">
+            <span>01</span>
+            <h3>Depart</h3>
+            <p>Vertical takeoff from a residential origin without a large runway.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>02</span>
+            <h3>Cruise</h3>
+            <p>Air transit toward an urban destination with a 100 nm design-range objective.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>03</span>
+            <h3>Land</h3>
+            <p>Vertical arrival on the rooftop of a city parking structure.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>04</span>
+            <h3>Reconfigure</h3>
+            <p>Stow the main rotor and swivel the tail rotor for controlled ground movement.</p>
+          </article>
+          <article class="mission-step reveal">
+            <span>05</span>
+            <h3>Park</h3>
+            <p>Drive through garage clearances at a limited ground speed of about 12 mph.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section container" id="design">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">03 // CAD DEVELOPMENT</p>
+          <h2>Packaging the flight system for a constrained footprint.</h2>
+        </div>
+        <div class="cad-gallery">
+          <figure class="gallery-wide reveal">
+            <img
+              src="assets/vtol/dimensions.webp"
+              alt="Dimensioned four-view CAD drawing of the personal VTOL aircraft"
+              loading="lazy"
+            />
+            <figcaption>
+              Overall dimensional study showing the aircraft packaging and rotor envelope.
+            </figcaption>
+          </figure>
+          <figure class="reveal">
+            <img
+              src="assets/vtol/stowed-rotor.webp"
+              alt="CAD rendering of the aircraft with its main rotor blades folded for ground operation"
+              loading="lazy"
+            />
+            <figcaption>Stowed main-rotor configuration proposed for garage travel.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img
+              src="assets/vtol/powertrain.webp"
+              alt="CAD detail view of the aircraft engine and rotor powertrain arrangement"
+              loading="lazy"
+            />
+            <figcaption>Powertrain layout developed around the selected engine and rotor drive.</figcaption>
+          </figure>
+          <figure class="gallery-small reveal">
+            <img
+              src="assets/vtol/tail-rotor.webp"
+              alt="CAD close-up of the aircraft swiveling tail rotor mechanism"
+              loading="lazy"
+            />
+            <figcaption>Tail rotor detail for the swiveling ground-thrust concept.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section container" id="validation">
+        <div class="case-section-heading reveal">
+          <p class="eyebrow">04 // TRADEOFFS &amp; VALIDATION</p>
+          <h2>A promising concept with clearly documented next steps.</h2>
+        </div>
+        <div class="validation-grid">
+          <article class="validation-card reveal">
+            <p class="validation-status success">DESIGN RESPONSE</p>
+            <h3>Compact operating envelope</h3>
+            <p>
+              The design investigation addressed garage compatibility through rotor stowage,
+              a swiveling tail rotor, and low-speed ground operation.
+            </p>
+          </article>
+          <article class="validation-card reveal">
+            <p class="validation-status warning">KEY TRADEOFF</p>
+            <h3>Weight objective exceeded</h3>
+            <p>
+              The final presentation reports a 1,096 lb design weight against the original objective
+              of less than 1,000 lb, identifying weight reduction as future optimization work.
+            </p>
+          </article>
+          <article class="validation-card reveal">
+            <p class="validation-status pending">REQUIRED VALIDATION</p>
+            <h3>Before physical development</h3>
+            <p>
+              The report identifies structural testing, rotor-dynamic analysis, failure-mode analysis,
+              professional review, and aviation regulatory compliance as required next steps.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-source container reveal">
+        <p class="eyebrow">SOURCE MATERIAL</p>
+        <h2>Project documentation</h2>
+        <p>
+          Case study content and images were prepared from the team's
+          <strong>Final Design Report</strong> and <strong>Team 129 Final Presentation</strong>.
+          Figures shown above are extracted from those project deliverables.
+        </p>
+        <a class="text-link" href="index.html#projects">Return to portfolio <span>-></span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>&copy; <span id="year"></span> Zonghao (Johnny) Li. Mechanical Engineering Portfolio.</p>
+      <a href="#top">Back to top <span>^</span></a>
+    </footer>
+  </body>
+</html>
